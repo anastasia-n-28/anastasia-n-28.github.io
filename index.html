@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Billiard Game</title>
+    <style>
+        .info {
+            font-family: Arial, sans-serif;
+            margin-bottom: 10px;
+        }
+        .stats {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        #score, #power {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Billiard Game</h1>
+    <div class="info">
+        <p>
+            Для початку гри натисніть <b>"пробіл"</b>.<br>
+            Удар виконується натисканням на екран за білою кулею в області, обмеженій чорним контуром.<br>
+            <b>Сила удару:</b> чим ближче курсор до білої кулі, тим менша сила удару.<br>
+            Біла куля забивається в останню чергу; до цього її влучання не зараховується.
+        </p>
+        <div class="stats">
+            <span id="score"><b>Score: 0/16</b></span>
+            <span id="power">Impact force: 0</span>
+        </div>
+    </div>
+    <div>
+        <canvas id="canvas" width="1800" height="1300" style="border: solid thin" tabindex="0"></canvas>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
